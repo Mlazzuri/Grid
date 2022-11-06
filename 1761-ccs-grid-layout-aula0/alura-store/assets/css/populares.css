@@ -1,0 +1,64 @@
+.populares{
+    padding: 3rem 0;
+}
+
+.populares__card{
+    display: grid;
+    grid-template-rows: 
+    "card-imagen"
+    "card-base";
+    grid-template-columns: 100%;
+    width: calc(20% - 1rem);
+    margin-right: 1rem;
+    grid-template-rows: 173px auto;
+}
+
+.populares__card___imagen{
+    grid-area: "card-imagen";
+    width: 100%;
+    height: 100%;
+}
+
+.populares__card___base{
+    background-color: white;
+    grid-area: "card-base";
+    display: grid;
+    grid-row-gap: .5rem;
+    grid-template-areas: 
+    "card-header"
+    "card-description";
+    grid-template-rows: 50px auto;
+    padding: .75rem;
+}
+
+.populares__card___descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: "card-description";
+    padding: 1rem 0rem;
+}
+
+.populares__contenido{
+    
+    display:flex;
+    flex-wrap: wrap;
+    padding: 1rem 0rem;
+    grid-area: "contenido";
+}
+
+.populares__header{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+.populares__card___descripcion{
+    text-align: justify;
+    line-height: 1.5rem;
+    color:#838383;
+}
+
+.populares__card:last-child{
+    margin-right: 0;
+}
+

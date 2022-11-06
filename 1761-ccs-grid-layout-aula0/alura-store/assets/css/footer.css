@@ -1,0 +1,7 @@
+.rodapie{
+    grid-area: "rodapie";
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+}
